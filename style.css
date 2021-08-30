@@ -32,13 +32,25 @@ body {
   max-width: 120rem;
 }
 
+.header{
+  margin-bottom: var(--font-size-s);
+}
 .header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: solid ;
-  border-color: dodgerblue;
-  margin-bottom: 100px;
+  border-color:orange;
+}
+
+.header__logo{
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__logo:hover, .header__logo:focus{
+  transform: scale(1.1);
+}
 }
 
 .footer__content {
