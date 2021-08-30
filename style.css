@@ -1,10 +1,9 @@
 :root {
   --bg-color: #f4f4f4;
   --text-color: dimgrey;
+  --font-size-s: 1.2rem;
   --font-size-lg: 1.8rem;
   --font-size: 1.6rem;
-  --font-size-s: 1.2rem;
-
 }
 
 * {
@@ -35,6 +34,7 @@ body {
 .header{
   margin-bottom: var(--font-size-s);
 }
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -76,13 +76,16 @@ main > .content-container{
   border: solid 1px;
   border-radius: 5px;
 }
+
+.footer{
+  margin-top: var(--font-size-s);
 }
 
 .footer__content {
   display: flex;
   align-items: center;
   padding-top: var(--font-size-s);
-  border-top: solid tomato;
+  border-top: solid orange;
 }
 
 .footer__github-icon {
