@@ -10,6 +10,7 @@ function whateverToUpperSnakeCase(str) {
   );
 }
 
+//NOTE: TODO build() not working with number values
 let text = "";
 function build(obj, key) {
   for (let k in obj) {
@@ -25,16 +26,9 @@ function build(obj, key) {
   return text;
 }
 
-//NOTE: TODO build() not working with number values
-const foo = {
-  api_key: "25afwa",
-  "setup-test": "isTheApi",
-  abi: {
-    golden: "sfaw",
-    apple: "test2",
-  },
-};
-
-console.log(foo);
-
-console.log(build(foo, "FIREBASE"));
+document.getElementById("textarea").
+addEventListener("input", ()=>{
+  let bayaci_object = document.getElementById("textarea").value
+  console.log(eval('(' + bayaci_object + ')'))
+ ;
+});
