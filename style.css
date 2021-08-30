@@ -51,6 +51,31 @@ body {
 .header__logo:hover, .header__logo:focus{
   transform: scale(1.1);
 }
+
+main > .content-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container__textarea{
+  display: block;
+  width: 50rem;
+  min-height: 50rem;
+  resize: none;
+  overflow: auto;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  font-size: var(--font-size-lg);
+  font-family: inherit;
+}
+
+.output{
+  font-size: var(--font-size-lg);
+  width: 50rem;
+  height: 50rem;
+  border: solid 1px;
+  border-radius: 5px;
+}
 }
 
 .footer__content {
