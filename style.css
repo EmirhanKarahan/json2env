@@ -52,6 +52,12 @@ body {
   transform: scale(1.1);
 }
 
+.header__slogan{
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: orange;
+}
+
 main > .content-container{
   display: flex;
   justify-content: space-between;
