@@ -10,7 +10,6 @@ function whateverToUpperSnakeCase(str) {
   );
 }
 
-//NOTE: TODO build() not working with number values
 let text = "";
 function build(obj, key) {
   for (let k in obj) {
@@ -26,9 +25,29 @@ function build(obj, key) {
   return text;
 }
 
-document.getElementById("textarea").
-addEventListener("input", ()=>{
-  let bayaci_object = document.getElementById("textarea").value
-  console.log(eval('(' + bayaci_object + ')'))
- ;
+const inputArea = document.getElementById("textarea");
+const outputArea = document.getElementById("output");
+outputArea.setAttribute("contenteditable", true);
+
+inputArea.addEventListener("input", () => {
+  let userInput = inputArea.value;
+  outputArea.textContent = "your output will be shown here";
+  outputArea.style.color = "var(--text-color)";
+  outputArea.style.borderWidth = "1px";
+
+  if (userInput) {
+    outputArea.style.borderWidth = "2px";
+    try {
+      const outputObject = eval("(" + userInput + ")");
+      const output = build(outputObject);
+      text = "";
+      if (output) {
+        outputArea.textContent = output;
+        outputArea.style.color = "limegreen";
+      }
+    } catch (e) {
+      outputArea.textContent = e;
+      outputArea.style.color = "orangered";
+    }
+  }
 });
