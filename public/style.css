@@ -14,7 +14,6 @@ html {
   font-size: 62.5%;
 }
 
-
 body {
   color: dimgrey;
   background-color: var(--bg-color);
@@ -32,7 +31,7 @@ body {
   max-width: 120rem;
 }
 
-.header{
+.header {
   margin-bottom: var(--font-size-s);
 }
 
@@ -40,38 +39,39 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid ;
-  border-color:orange;
+  border-bottom: solid;
+  border-color: orange;
 }
 
-.header__logo{
+.header__logo {
   text-decoration: none;
   color: inherit;
 }
 
-.header__logo:hover, .header__logo:focus{
+.header__logo:hover,
+.header__logo:focus {
   transform: scale(1.1);
 }
 
-.header__slogan{
+.header__slogan {
   font-size: var(--font-size-lg);
   font-weight: bold;
   color: orange;
 }
 
-main > .content-container{
+main > .content-container {
   display: flex;
   justify-content: space-between;
 }
 
-.input-container{
+.input-container {
   width: 100%;
   min-width: 30rem;
   max-width: 55rem;
   height: 55rem;
 }
 
-.input-container__textarea{
+.input-container__textarea {
   display: block;
   width: 100%;
   height: 100%;
@@ -83,7 +83,7 @@ main > .content-container{
   font-family: inherit;
 }
 
-.output-container{
+.output-container {
   position: relative;
   width: 100%;
   min-width: 30rem;
@@ -92,7 +92,7 @@ main > .content-container{
   margin-left: 1rem;
 }
 
-.output{
+.output {
   font-size: var(--font-size-lg);
   width: 100%;
   height: 100%;
@@ -102,7 +102,7 @@ main > .content-container{
   overflow: auto;
 }
 
-.output__copied-message{
+.output__copied-message {
   display: none;
   position: absolute;
   top: 1rem;
@@ -116,7 +116,7 @@ main > .content-container{
   transition: all 1s ease-in-out;
 }
 
-.output__copy-icon{
+.output__copy-icon {
   position: absolute;
   bottom: 1.5rem;
   right: 1.5rem;
@@ -124,11 +124,11 @@ main > .content-container{
   background: none;
 }
 
-.output__copy-icon:hover{
+.output__copy-icon:hover {
   transform: scale(1.1);
 }
 
-.footer{
+.footer {
   margin-top: var(--font-size-s);
 }
 
@@ -145,35 +145,36 @@ main > .content-container{
   margin-left: 5px;
 }
 
-.footer__github-icon:hover, .footer__github-icon:focus {
-    transform: scale(1.1);
+.footer__github-icon:hover,
+.footer__github-icon:focus {
+  transform: scale(1.1);
 }
 
 @media (max-width: 700px) {
-  .content-container{
+  .content-container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  main > .content-container{
+  main > .content-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
-  .input-container{
+
+  .input-container {
     max-height: 40rem;
   }
 
-  .output-container{
+  .output-container {
     margin-left: 0;
     margin-top: 1rem;
     max-height: 40rem;
   }
 }
 
-@media (max-width: 400px){
-  .header__content{
+@media (max-width: 400px) {
+  .header__content {
     flex-direction: column;
     justify-content: center;
   }
