@@ -98,6 +98,30 @@ main > .content-container{
   height: 50rem;
   border: solid 1px;
   border-radius: 5px;
+.output__copied-message{
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  width: 10rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  transform: translate(-50%, 0);
+  transition: all 1s ease-in-out;
+}
+
+.output__copy-icon{
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  border: none;
+  background: none;
+}
+
+.output__copy-icon:hover{
+  transform: scale(1.1);
 }
 
 .footer{

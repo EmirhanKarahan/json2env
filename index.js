@@ -25,6 +25,16 @@ function build(obj, key) {
   return text;
 }
 
+function copyTextContent(id) {
+  const outputArea = document.getElementById(id);
+  navigator.clipboard.writeText(outputArea.textContent);
+  const messageBox = document.getElementById("copied-message");
+  messageBox.style.display = "block";
+  setTimeout(() => {
+    messageBox.style.display = "none";
+  }, 1000);
+}
+
 const inputArea = document.getElementById("textarea");
 const outputArea = document.getElementById("output");
 outputArea.setAttribute("contenteditable", true);
