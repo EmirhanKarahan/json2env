@@ -37,11 +37,18 @@ function copyTextContent(id) {
 
 const inputArea = document.getElementById("textarea");
 const outputArea = document.getElementById("output");
-outputArea.setAttribute("contenteditable", true);
 
 inputArea.addEventListener("input", () => {
   let userInput = inputArea.value;
-  outputArea.textContent = "your output will be shown here";
+  outputArea.textContent = `your output will be shown here
+
+result
+CAMEL_HUMP=2
+PASCAL_LANG=cAseinSensitive
+TURKISH_KEBAB=tasty
+SNAKE_BITE=toxic
+RECURSIVE_PROPERTY=value`;
+
   outputArea.style.color = "var(--text-color)";
   outputArea.style.borderWidth = "1px";
 

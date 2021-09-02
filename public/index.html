@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>json2env - generate .env variables from json/js obj</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script defer src="../src.js"></script>
 </head>
@@ -25,11 +26,27 @@
     <main class="main">
         <div class="content-container">
             <section class="input-container">
-                <textarea class="input-container__textarea" id="textarea" placeholder="enter json or js object here"
-                    wrap="off" autofocus></textarea>
+                <textarea class="input-container__textarea" id="textarea" spellcheck="false" placeholder="enter json or js object here
+
+e.g.
+{
+camelHump: 2,
+PascalLang: 'cAse inSensitive',
+'turkish-kebab': 'tasty',
+snake_bite: 'toxic',
+recursive: { property:'value' }
+}" wrap="off" autofocus></textarea>
             </section>
             <section class="output-container">
-                <div class="output" id="output">your output will be shown here</div>
+                <div class="output" id="output" spellcheck="false" contenteditable="true">your output will be shown here
+
+result
+CAMEL_HUMP=2
+PASCAL_LANG=cAseinSensitive
+TURKISH_KEBAB=tasty
+SNAKE_BITE=toxic
+RECURSIVE_PROPERTY=value
+                </div>
                 <div class="output__copied-message" id="copied-message">copied!</div>
                 <button class="output__copy-icon" onclick="copyTextContent('output')"><img src="copy.svg"
                         alt=""></button>
