@@ -1,5 +1,5 @@
 # json2env
-Convert your json or js object to .env variables [json2env.herokuapp.com](https://json2env.herokuapp.com/)
+Convert your json or js object to .env variables [json2env.netlify.com](https://json2env.netlify.com/)
 
 ## Install
 
