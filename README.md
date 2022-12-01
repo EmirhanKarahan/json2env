@@ -1,5 +1,5 @@
 # json2env
-Convert your json or js object to .env variables [json2env.netlify.com](https://json2env.netlify.com/)
+Convert your json or js object to .env variables [json2env.vercel.app](https://json2env.vercel.app/)
 
 ## Install
 
